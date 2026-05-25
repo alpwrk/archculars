@@ -7,16 +7,17 @@ written in Rust on top of [ratatui](https://ratatui.rs/) and
 
 ```
  ─────────────────────────────────────────────────────────────
-   archculars   moderne TUI für Arch + AUR
+   archculars   modern TUI for Arch + AUR
  ─────────────────────────────────────────────────────────────
- / Suche [enter] linux
- ─────────────────────── Pakete · All · 47 Treffer ─────────
+ / Search [Enter] linux
+ ─────────────────────── Packages · All · 47 Results ────────
  ▶ linux            6.12.1.arch1-1   core    142 MB  ✓
    linux-zen        6.12.1.zen1-1    extra   148 MB  ✓
    linux-cachyos    6.12.1-1         AUR     151 MB  —
    linux-firmware   20250108.1-1     core     1.4 GB ✓
  ───────────────────────────────────────────────────────────
- / Suche  ↑↓ Nav  Enter Install/Remove  d Deps  p PKGBUILD …
+ / Search  ↑↓ Navigate  Enter Install/Remove
+   d Dependencies  p PKGBUILD
 ```
 
 ## Features
