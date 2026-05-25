@@ -1,0 +1,10 @@
+pub mod deps_modal;
+pub mod footer;
+pub mod info;
+pub mod install_modal;
+pub mod news_modal;
+pub mod pkgbuild_modal;
+pub mod search;
+pub mod stats_modal;
+pub mod table;
+pub mod updates_modal;

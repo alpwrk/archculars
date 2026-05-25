@@ -1,0 +1,36 @@
+[package]
+name = "archculars"
+version = "0.1.0"
+edition = "2021"
+description = "A modern TUI for Arch Linux + AUR package management"
+license = "MIT"
+
+[dependencies]
+ratatui = "0.29"
+crossterm = { version = "0.28", features = ["event-stream"] }
+tokio = { version = "1.40", features = ["full"] }
+tokio-util = "0.7"
+futures = "0.3"
+alpm = "4.0"
+alpm-utils = "4.0"
+pacmanconf = "3.0"
+raur = "8.0"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json"] }
+clap = { version = "4.5", features = ["derive"] }
+anyhow = "1"
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+syntect = { version = "5", default-features = false, features = ["default-fancy"] }
+feed-rs = "2"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+humansize = "2"
+dirs = "5"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
