@@ -1,7 +1,6 @@
 # archculars
 
 A modern terminal UI for browsing and managing Arch Linux + AUR packages.
-Built as a feature-rich successor to [pacseek](https://github.com/moson-mo/pacseek),
 written in Rust on top of [ratatui](https://ratatui.rs/) and
 [libalpm](https://man.archlinux.org/man/libalpm.3.en).
 
