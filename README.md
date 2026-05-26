@@ -2,7 +2,7 @@
 
 A modern terminal UI for browsing and managing Arch Linux + AUR packages.
 written in Rust on top of [ratatui](https://ratatui.rs/) and
-[libalpm](https://man.archlinux.org/man/libalpm.3.en).
+[libalpm](https://man.archlinux.org/man/libalpm.3.en) to be fast.
 
 ```
  ─────────────────────────────────────────────────────────────
