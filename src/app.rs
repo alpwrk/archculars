@@ -311,6 +311,7 @@ fn handle_key(app: &mut App, key: crossterm::event::KeyEvent) {
         }
         KeyCode::Char('f') => cycle_filter(app),
         KeyCode::Char('r') => {
+            app.aur.clear_cache();
             app.last_searched.clear();
             app.toast = Some("Reloaded".into());
             trigger_search(app);

@@ -68,6 +68,11 @@ impl AurClient {
         Ok(out)
     }
 
+    /// Drop all cached AUR responses so the next query hits the network.
+    pub fn clear_cache(&self) {
+        self.cache.clear();
+    }
+
     /// Fetch a single PKGBUILD from the AUR git mirror.
     pub async fn pkgbuild(&self, name: &str) -> Result<String> {
         let url = format!("https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h={name}");
