@@ -19,6 +19,23 @@ written in Rust on top of [ratatui](https://ratatui.rs/) and
    d Dependencies  p PKGBUILD
 ```
 
+## Install
+
+### AUR (recommended)
+
+```bash
+# yay
+yay -S archculars
+
+# paru
+paru -S archculars
+
+# manual (makepkg)
+git clone https://aur.archlinux.org/archculars.git
+cd archculars
+makepkg -si
+```
+
 ## Features
 
 - **Async parallel search** in repos (via libalpm) and AUR (via raur), with a 1h
